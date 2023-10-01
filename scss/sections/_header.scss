@@ -46,6 +46,10 @@
   text-decoration: none;
   color: var(--secondary-text-color);
   opacity: 0;
+  transition: 0.4s ease;
+  &:hover {
+    color: var(--main-violet);
+  }
 }
 
 @media screen and (min-width: 412px) {
@@ -93,7 +97,7 @@
     border: 1px solid var(--main-border-color);
     border-radius: 20px;
     padding: 5px 20px;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--main-bg-color);
     transition: all 0.4s ease;
     &:hover {
       background-color: var(--dark-bg-color);
