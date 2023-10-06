@@ -1,3 +1,5 @@
+const workList = document.querySelector(".work__list");
+
 const navSlide = () => {
   const hamburger = document.querySelector(".hamburger");
   const navList = document.querySelector(".nav__list");
@@ -24,3 +26,32 @@ const app = () => {
 };
 
 app();
+
+function renderWork(array, node) {
+  array.forEach((element) => {
+    const workItem = document.createElement("li");
+    workItem.classList.add("work__item");
+
+    workItem.innerHTML = `
+      <div class="work__wrapper">
+        <div class="work__inner">
+            <img src="${element.icon}" alt="${element.name}" class="work__img" />
+            <p class="work__title">${element.name}</p>
+        </div>
+          <a href="${element.url}" target="_blank" class="work__link">View Live</a>
+      </div>
+        <ul class="work__types">
+          <li class="work__type">${element.type[0]}</li>
+          <li class="work__type">${element.type[1]}</li>
+          <li class="work__type">${element.type[2]}</li>
+          <li class="work__type">${element.type[3]}</li>
+        </ul>
+        <div class="work__pic">
+          <img src="${element.img}" alt="${element.name}" class="work__pics" />
+        </div>
+    `;
+    node.append(workItem);
+  });
+}
+
+renderWork(works, workList);
