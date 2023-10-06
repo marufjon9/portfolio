@@ -1,7 +1,8 @@
 .main {
+  margin: 25px 0;
 }
+
 .intro {
-  margin-bottom: 20px;
 }
 .grid-container {
   display: grid;
@@ -13,93 +14,66 @@
 .grid__item {
   border-radius: 15px;
   overflow: hidden;
-  padding: 19px;
-  flex-grow: 0.5;
-  margin: 0 auto;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.95);
 }
 .one {
-  background-color: #fdd2b2;
+  background-color: yellowgreen;
 }
 .one__wrapper {
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .one__title {
-  color: #350910;
-  max-width: 200px;
 }
 .one__about {
-  color: #350910;
 }
 .two {
-  padding: 0;
 }
 .two__wrapper {
 }
-.two__wrapper img {
-  display: block;
-  width: 100%;
-}
 .three {
-  padding: 0;
+  background-color: #dbd0c0;
 }
 .three__wrapper {
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.three__top {
-  border: 1px solid rgba(0, 0, 0, 0.219);
-  border-radius: 15px;
-  padding: 19px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #fff;
+  gap: 10px;
 }
 .three__title {
 }
 .three__text {
 }
-.three__bottom {
-  border: 1px solid rgba(0, 0, 0, 0.219);
-  border-radius: 15px;
-  padding: 19px;
+.four {
+  background-color: #fd841f;
+}
+.four__wrapper {
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: #fff;
+  gap: 10px;
 }
-.three__subtitle {
+.four__subtitle {
 }
-.three__box {
+.four__box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
-
-.three__box div {
-  border: 1px solid rgba(0, 0, 0, 0.219);
-  text-align: center;
+.four__box div {
+  border: 1px solid black;
   border-radius: 15px;
-  padding: 4px 12px;
-  font-size: 13px;
+  padding: 5px 0;
+  text-align: center;
 }
 
-@media (min-width: 650px) {
-  .one__title {
-    max-width: 350px;
-    font-size: 36px;
-  }
-  .grid__item {
-    max-width: unset;
-  }
+@media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .one {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .four__box {
+    gap: 5px;
   }
 }
