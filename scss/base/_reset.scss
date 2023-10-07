@@ -31,6 +31,7 @@ body {
   background-color: var(--main-bg-color);
   font-size: 15px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 main {
   flex-grow: 1;

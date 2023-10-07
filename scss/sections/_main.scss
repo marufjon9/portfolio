@@ -1,5 +1,5 @@
 .main {
-  margin: 25px 0;
+  margin-top: 27px;
 }
 
 .intro {
@@ -75,6 +75,12 @@
   text-align: center;
 }
 
+@media (min-width: 550px) {
+  .main {
+    margin-top: 29px;
+  }
+}
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -94,6 +100,8 @@
 
 .work {
   margin: 25px 0;
+  border-bottom: 2px dashed grey;
+  padding-bottom: 25px;
 }
 .work__list {
   display: grid;
@@ -109,6 +117,7 @@
   flex-direction: column;
   gap: 10px;
   background-color: #fff;
+  transition: all 0.5s ease-in-out;
   &:hover {
     box-shadow: 0px 0px 7px 3px rgba(34, 60, 80, 0.5);
   }

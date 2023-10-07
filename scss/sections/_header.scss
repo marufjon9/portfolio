@@ -111,6 +111,7 @@
     color: var(--main-text-color);
     opacity: 1;
     transition: all 0.4s ease;
+    scroll-behavior: smooth;
   }
   .hamburger div {
     display: none;
